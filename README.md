@@ -9,8 +9,8 @@ $$\sum_{i =1}^{k \binom{r}{2}} e_i \leq k \binom{r}{2} -1.$$
 
 As we wish to maximize $|E(G)|$, our objective function is simply:
 
-$$\sum_{e \in E(K_{n_1,\dots, n_m})} x_e$$.
+$$\sum_{e \in E(K_{n_1,\dots, n_m})} x_e.$$
 
-[comment]: <> (See run.py for an implementation of this ILP. My code uses backtracking to determine all edges in a $K_{n_1, \dots, n_m}$ as well as all possible collections of $k K_r$'s to form the constraints. I used a Gurobi solver for the ILP portion of my code. Input $n_1, \dots, n_m$, $k$, and $r$ at the bottom of the script. I have tested the results against the bounds given in Theorem 1 and 2. )
+See run.py for an implementation of this ILP. My code uses backtracking to determine all edges in a $K_{n_1, \dots, n_m}$ as well as all possible collections of $k K_r$'s to form the constraints. I used a Gurobi solver for the ILP portion of my code. Input $n_1, \dots, n_m$, $k$, and $r$ at the bottom of the script. I have tested the results against the bounds given in Theorem 1 and 2. 
 
-[comment]: <> (This work was inspired by https://arxiv.org/abs/1903.05495.)
+This work was inspired by https://arxiv.org/abs/1903.05495.
