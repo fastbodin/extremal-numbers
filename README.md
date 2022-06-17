@@ -5,7 +5,7 @@ A script to determine the ex$\left(K_{n_1, \dots, n_m}, k K_r\right)$ for arbitr
 
 This problem can be phrased with the following ILP. Fix some $n_1, \dots, n_m$, $k$, and $r$. We wish to find the subgraph $H$ of $K_{n_1, \dots, n_m}$ with the maximum number of edges such that $H$ contains no $kK_r$. For each edge $e$ in $E(K_{n_1, \dots, n_m})$, let $x_{e}$ be an indicator variable giving the truth value of the statement $e$ in $E(H)$. To ensure that $H$ contains no $k K_r$, for every collection of $k \binom{r}{2}$  edges $e_1, e_2, \dots, e_{k \binom{r}{2}}$ forming a $k K_r$, we add the constraint:
 
-1. $\sum_{i =1}^{ k \binom{r}{2} } e_i \leq k \binom{r}{2} -1.$ 
+$$\sum_{i =1}^{k \binom{r}{2}} e_i \leq k \binom{r}{2} -1.$$
 
 As we wish to maximize $|E(G)|$, our objective function is simply $\sum_{e \in E(K_{n_1,\dots, n_m})} x_e$.
 
